@@ -65,7 +65,6 @@ module.exports = mongoose.model("Movie", MovieSchema);
  *               items:
  *                 $ref: '#/components/schemas/Movie'
  */
-router.get('/', auth, async (req, res) => { ... });
 
 /**
  * @swagger
@@ -83,7 +82,6 @@ router.get('/', auth, async (req, res) => { ... });
  *       201:
  *         description: The movie was successfully added
  */
-router.post('/', [auth, [...]], async (req, res) => { ... });
 
 /**
  * @swagger
@@ -110,7 +108,6 @@ router.post('/', [auth, [...]], async (req, res) => { ... });
  *       404:
  *         description: The movie was not found
  */
-router.put('/:id', auth, async (req, res) => { ... });
 
 /**
  * @swagger
@@ -131,4 +128,3 @@ router.put('/:id', auth, async (req, res) => { ... });
  *       404:
  *         description: The movie was not found
  */
-router.delete('/:id', auth, async (req, res) => { ... });

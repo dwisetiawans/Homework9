@@ -102,7 +102,6 @@ module.exports = router;
  *       400:
  *         description: The username is already taken
  */
-router.post('/register', [...], async (req, res) => { ... });
 
 /**
  * @swagger
@@ -127,4 +126,3 @@ router.post('/register', [...], async (req, res) => { ... });
  *       401:
  *         description: Invalid username or password
  */
-router.post('/login', [...], async (req, res) => { ... });
